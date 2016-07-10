@@ -289,7 +289,7 @@ while getopts "i:r:u:e:p:h:d:s:v:b:x:" arg; do
       fi
       ;;
     s)
-      path="/opt/serviced/var"
+      path="/backup/opt/serviced/var"
       rfs=$serviced_fs_type
       dev=$OPTARG
       echo -e "${yellow}0 Preparing ${path} filesystem - device: ${dev}${endColor}"
@@ -349,7 +349,7 @@ while getopts "i:r:u:e:p:h:d:s:v:b:x:" arg; do
       fi
       ;;
     v)
-      path="/opt/serviced/var/volumes"
+      path="/backup/opt/serviced/var/volumes"
       rfs=$servicedvolumes_fs_type
       dev=$OPTARG
       echo -e "${yellow}0 Preparing ${path} filesystem - device: ${dev}${endColor}"
@@ -409,7 +409,7 @@ while getopts "i:r:u:e:p:h:d:s:v:b:x:" arg; do
       fi
       ;;
     b)
-      path="/opt/serviced/var/backups"
+      path="/backup/opt/serviced/var/backups"
       rfs=$servicedbackups_fs_type
       dev=$OPTARG
       echo -e "${yellow}0 Preparing ${path} filesystem - device: ${dev}${endColor}"
