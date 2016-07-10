@@ -16,13 +16,13 @@ cpus_min=4
 rams_min=20 #GB
 # Default filesystem requirements (RHEL 7 / CentOS 7)
 maxusage=90 #% max disk usage
-root_fs_min_size=30 #GB
+root_fs_min_size=28 #GB
 root_fs_type="xfs"
 root_fs_path="/backup"
-docker_fs_min_size=30 #GB
+docker_fs_min_size=28 #GB
 docker_fs_type="xfs"
 docker_fs_path="/backup/var/lib/docker"
-serviced_fs_min_size=30 #GB
+serviced_fs_min_size=28 #GB
 serviced_fs_type="xfs"
 serviced_fs_path="/backup/opt/serviced/var"
 servicedvolumes_fs_min_size=1 #GB
