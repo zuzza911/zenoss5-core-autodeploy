@@ -27,7 +27,7 @@ serviced_fs_type="xfs"
 serviced_fs_path="/backup/opt/serviced/var"
 servicedvolumes_fs_min_size=1 #GB
 servicedvolumes_fs_type="btrfs"
-servicedvolumes_fs_path="/opt/serviced/var/volumes"
+servicedvolumes_fs_path="/backup/opt/serviced/var/volumes"
 servicedbackups_fs_min_size=1 #GB
 servicedbackups_fs_type="xfs"
 servicedbackups_fs_path="/backup/opt/serviced/var/backups"
@@ -349,7 +349,7 @@ while getopts "i:r:u:e:p:h:d:s:v:b:x:" arg; do
       fi
       ;;
     v)
-      path="/opt/serviced/var/volumes"
+      path="/backup/opt/serviced/var/volumes"
       rfs=$servicedvolumes_fs_type
       dev=$OPTARG
       echo -e "${yellow}0 Preparing ${path} filesystem - device: ${dev}${endColor}"
